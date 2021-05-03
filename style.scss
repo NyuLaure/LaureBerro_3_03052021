@@ -1,0 +1,121 @@
+$color-prim: #9356DC;
+$color-sec:#FF79DA;
+$color-ter: #99E2D0;
+$color-background: #f6f6f6;
+$color-hover-nav: #f5edff;
+
+@media only screen and (max-width: 768px) {
+@font-face {
+    font-family: "roboto", 'Times New Roman', Times, serif;
+    src: url(police/roboto/Roboto-Black.ttf);
+    src: url(police/roboto/Roboto-Bold.ttf);
+    src: url(police/roboto/Roboto-Regular.ttf);
+}
+
+.header-logo {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(128, 128, 128, 0.616);
+    margin-bottom: 5px;
+    & img {
+        width: 45%;
+        height: 50%;
+    }
+}
+
+.header__localisation {
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p { 
+        margin-left: 15px;
+    }
+    input {
+        outline: none;
+    }
+}
+
+.header__explorer { 
+    background: $color-background;
+   padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-justify: center;
+    align-items: center;
+    h3 { 
+        font-size: 1.5em;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+.header__btn {
+    background: linear-gradient(to bottom right,$color-sec, $color-prim);
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px grey;
+    line-height:45px ;
+  
+    a { 
+        color: white;
+        text-decoration: none;
+    }
+}
+nav {
+    ol {
+        list-style-type: border 1px grey;
+    }
+    li { 
+        height: 60px;
+        width: 90%;
+        background: $color-background;
+        border-radius: 20px;
+        text-align: center;
+
+        a {
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    p { 
+        font-size: 1.3em;
+        font-weight: bold;
+     padding-left: 10px;
+}
+}
+
+img { 
+    width: 120px;
+}
+footer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    a { 
+        color: white;
+        text-decoration: none;
+        padding: 0 0 10px 30px;
+    }
+}
+    
+    
+    svg {
+        width: 110px;
+        padding: 30px;
+}
+}
