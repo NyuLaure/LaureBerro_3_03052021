@@ -101,16 +101,6 @@
     padding-left: 30px;
     margin-bottom: 80px;
   }
-  nav ol p {
-    position: absolute;
-    top: 8px;
-    left: -9px;
-    border-radius: 50%;
-    background: #9356DC;
-    padding: 3px 8px 3px 8px;
-    color: white;
-    font-size: 0.8em;
-  }
   nav li {
     height: 60px;
     width: 90%;
@@ -119,6 +109,21 @@
     text-align: center;
     -webkit-box-shadow: 0 3px 7px #e7e7e7;
             box-shadow: 0 3px 7px #e7e7e7;
+    line-height: 60px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  nav li p {
+    position: absolute;
+    top: 0px;
+    left: -9px;
+    border-radius: 50%;
+    background: #9356DC;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    font-size: 0.8em;
+    height: 30px;
+    line-height: 30px;
   }
   nav li a {
     width: 100%;

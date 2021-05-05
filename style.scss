@@ -95,16 +95,7 @@ nav {
         padding-left: 30px;
         margin-bottom: 80px;
 
-        p { 
-            position: absolute;
-            top: 8px;
-            left: -9px;
-            border-radius: 50%;
-            background: $color-prim;
-            padding: 3px 8px 3px 8px;
-            color: white;
-            font-size: 0.8em;
-        }
+        
     } 
    
 
@@ -115,7 +106,22 @@ nav {
         border-radius: 20px;
         text-align: center;
         box-shadow: 0 3px 7px #e7e7e7;
+        line-height: 60px;
+        position: relative;
+        margin-bottom: 20px;
         
+        p { 
+            position: absolute;
+            top: 0px;
+            left: -9px;
+            border-radius: 50%;
+            background: $color-prim;
+            padding: 0px 10px 0px 10px;
+            color: white;
+            font-size: 0.8em;
+            height: 30px;
+            line-height: 30px;
+        }
 
         a {
             width: 100%;
