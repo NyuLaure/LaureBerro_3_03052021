@@ -30,6 +30,7 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 270px;
 }
 
 .menu__container {
@@ -39,7 +40,7 @@ img {
 }
 
 .menu__container h1 {
-  margin-left: 20px;
+  margin: 15px 0 10px 20px;
 }
 
 .fa-heart {
