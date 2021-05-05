@@ -4,12 +4,12 @@ $color-ter: #99E2D0;
 $color-background: #f6f6f6;
 $color-hover-nav: #f5edff;
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
 @media only screen and (max-width: 768px) {
-@font-face {
-    font-family: "roboto", 'Times New Roman', Times, serif;
-    src: url(police/roboto/Roboto-Black.ttf);
-    src: url(police/roboto/Roboto-Bold.ttf);
-    src: url(police/roboto/Roboto-Regular.ttf);
+
+
+body { 
+    font-family:  sans-serif;
 }
 
 .header-logo {
@@ -33,7 +33,12 @@ $color-hover-nav: #f5edff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 50px; 
+
+    &-recherche { 
+        border: none;
+        background: #eaeaea;
+    }
     .fa-map-marker-alt { 
         margin-right: 15px ;
     }

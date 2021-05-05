@@ -1,9 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
 @media only screen and (max-width: 768px) {
-  @font-face {
-    font-family: "roboto", 'Times New Roman', Times, serif;
-    src: url(police/roboto/Roboto-Black.ttf);
-    src: url(police/roboto/Roboto-Bold.ttf);
-    src: url(police/roboto/Roboto-Regular.ttf);
+  body {
+    font-family: sans-serif;
   }
   .header-logo {
     background: white;
@@ -38,6 +36,10 @@
         -ms-flex-align: center;
             align-items: center;
     height: 50px;
+  }
+  .header__localisation-recherche {
+    border: none;
+    background: #eaeaea;
   }
   .header__localisation .fa-map-marker-alt {
     margin-right: 15px;
