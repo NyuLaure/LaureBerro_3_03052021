@@ -1,0 +1,145 @@
+.header-logo {
+  background: white;
+  width: 350px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.header-logo img {
+  width: 45%;
+  height: 50%;
+}
+
+.header-logo a {
+  position: absolute;
+  left: 25px;
+  top: 17px;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__container {
+  background: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.menu__container h1 {
+  margin-left: 20px;
+}
+
+.fa-heart {
+  font-size: 0.8em;
+  margin-left: 30px;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-left: 15px;
+  border-bottom: #99E2D0 solid 3px;
+}
+
+.plat {
+  position: relative;
+  border-radius: 10px;
+  background: white;
+  width: 90%;
+  margin: 0 0 10px 10px;
+}
+
+.plat h3 {
+  margin: 0;
+  padding: 9px 0 10px 10px;
+}
+
+.plat p {
+  margin: 0;
+  padding: 0 0 10px 10px;
+}
+
+.plat .price {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-weight: bold;
+}
+
+.btn--commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn--commander a {
+  color: white;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
+  padding: 15px 20px 15px 20px;
+  margin: 30px 0 30px;
+}
+
+.btn--commander a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer {
+  background: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding: 0 0 10px 30px;
+}
+
+footer .fa-handshake {
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
+  font-size: 0.8em;
+  margin-right: 7px;
+}
+
+footer .fa-utensils {
+  padding-right: 10px;
+  font-size: 0.8em;
+}
+
+footer svg {
+  width: 110px;
+  padding: 30px;
+}
+/*# sourceMappingURL=menu2.css.map */
