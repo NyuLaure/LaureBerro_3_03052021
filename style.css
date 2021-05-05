@@ -39,8 +39,8 @@
             align-items: center;
     height: 50px;
   }
-  .header__localisation p {
-    margin-left: 15px;
+  .header__localisation .fa-map-marker-alt {
+    margin-right: 15px;
   }
   .header__localisation input {
     outline: none;
@@ -203,9 +203,6 @@
     bottom: 30px;
     font-size: 1.5em;
   }
-  .main__container-restaurant .fa-heart:active {
-    color: linear-gradient(to top right, #FF79DA, #9356DC);
-  }
   .main__container-restaurant h3 {
     margin: 15px 0 0 15px;
   }
@@ -238,7 +235,7 @@
   }
   footer .fa-utensils {
     padding-right: 10px;
-    font-family: 0.8em;
+    font-size: 0.8em;
   }
   footer svg {
     width: 110px;

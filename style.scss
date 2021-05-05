@@ -34,9 +34,10 @@ $color-hover-nav: #f5edff;
     justify-content: center;
     align-items: center;
     height: 50px;
-    & p { 
-        margin-left: 15px;
+    .fa-map-marker-alt { 
+        margin-right: 15px ;
     }
+
     input {
         outline: none;
     }
@@ -207,9 +208,7 @@ nav {
             right:25px ;
             bottom: 30px;
             font-size: 1.5em;
-            &:active { 
-                color: linear-gradient(to top right,$color-sec, $color-prim);;
-            }
+            
         }
 
         h3 {
@@ -244,7 +243,7 @@ footer {
 
     .fa-utensils { 
         padding-right: 10px;
-        font-family: 0.8em;
+        font-size: 0.8em;
     }
     
     svg {
