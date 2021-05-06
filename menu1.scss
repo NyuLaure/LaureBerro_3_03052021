@@ -3,6 +3,14 @@ $color-sec:#FF79DA;
 $color-ter: #99E2D0;
 $color-background: #f6f6f6;
 $color-hover-nav: #f5edff;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+
+body {
+    font-family: "Roboto", sans-serif; 
+}
 
 .header-logo {
     background: white;
@@ -30,14 +38,20 @@ img {
     width: 100%;
     object-fit: cover;
     height: 270px;
+    z-index: 1;
+    
     
 }
 
 .menu__container { 
     
+    z-index: 2;
+    margin-top: -30px;
     background: #f6f6f6;
-    border-radius: 20px 20px 0 0;
+    border-radius: 40px 40px 0 0;
     width: 100%;
+  
+
      h1 { 
          margin: 15px 0 10px 20px;
      }
@@ -48,10 +62,23 @@ img {
     margin-left: 30px;
     font-weight: lighter;
 }
+
+h1{ 
+    font-family: "Shrikhand";
+    font-size: 1.5em;
+    padding:20px 0 15px 5px ;
+}
+
 h2 { 
-    font-size: 1.1em;
-    margin-left: 15px;
+    font-size: 1em;
+    margin: 30px 0 0 15px;
+    font-weight: lighter;
+}
+
+.underlign { 
     border-bottom: $color-ter solid 3px;
+    width: 40px;
+    margin: 7px 0 15px 15px;
 }
 .plat { 
     position: relative;
@@ -62,16 +89,20 @@ h2 {
     
     h3 { 
         margin: 0;
-        padding: 9px 0 10px 10px;
+        padding: 15px 0 5px 10px;
+        font-weight: normal;
+        font-size: 1.1em;
     }
     p { 
         margin: 0;
         padding: 0 0 10px 10px;
+        font-weight: lighter;
+        font-size: 0.9em;
     }
     .price { 
         position: absolute;
         bottom: 10px;
-        right: 20px;
+        right: 15px;
         font-weight: bold;
     }
 }

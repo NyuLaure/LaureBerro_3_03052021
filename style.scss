@@ -5,11 +5,12 @@ $color-background: #f6f6f6;
 $color-hover-nav: #f5edff;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
-@media only screen and (max-width: 768px) {
+
 
 
 body { 
-    font-family:  sans-serif;
+    font-family: "Roboto", sans-serif; 
+    
 }
 
 .header-logo {
@@ -66,6 +67,7 @@ body {
         margin: 0 0 30px 0;
     }
 }
+
 .header__btn {
       
         margin-top: 10px;
@@ -118,7 +120,7 @@ nav {
         
         p { 
             position: absolute;
-            top: 0px;
+            top: 2px;
             left: -9px;
             border-radius: 50%;
             background: $color-prim;
@@ -216,6 +218,18 @@ nav {
             
         }
 
+        .heart-full { opacity: 0;
+            & fa-heart { 
+            &:valid { 
+                opacity: 1;
+                color: linear-gradient(to top right,$color-sec, $color-prim);
+                }
+            }
+        }
+
+
+
+
         h3 {
             margin: 15px 0 0 15px;
         }
@@ -254,6 +268,5 @@ footer {
     svg {
         width: 110px;
         padding: 30px;
-}
 }
 }
