@@ -6,8 +6,6 @@ body {
 
 .header-logo {
   background: white;
-  width: 350px;
-  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,8 +15,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  margin-bottom: 5px;
+  margin: 20px 0 20px 0;
 }
 
 .header-logo img {
@@ -29,7 +26,16 @@ body {
 .header-logo a {
   position: absolute;
   left: 25px;
-  top: 17px;
+  top: 20px;
+  font-size: 1.3em;
+}
+
+.header-logo a:hover {
+  font-size: 1.5em;
+}
+
+.header-logo a:active {
+  color: black;
 }
 
 img {
@@ -40,28 +46,32 @@ img {
   z-index: 1;
 }
 
+main {
+  margin-top: 15px;
+}
+
 .menu__container {
+  position: relative;
+  top: -42px;
   z-index: 2;
   margin-top: -30px;
   background: #f6f6f6;
   border-radius: 40px 40px 0 0;
   width: 100%;
+  margin-bottom: -42px;
 }
 
 .menu__container h1 {
-  margin: 15px 0 10px 20px;
+  font-family: "Shrikhand";
+  font-size: 1.7em;
+  padding: 30px 0 0px 20px;
+  font-weight: lighter;
 }
 
 .fa-heart {
   font-size: 0.8em;
   margin-left: 30px;
   font-weight: lighter;
-}
-
-h1 {
-  font-family: "Shrikhand";
-  font-size: 1.5em;
-  padding: 20px 0 15px 5px;
 }
 
 h2 {
@@ -120,16 +130,15 @@ h2 {
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   text-align: center;
-  border-radius: 20px;
+  border-radius: 30px;
   -webkit-box-shadow: 2px 2px 5px grey;
           box-shadow: 2px 2px 5px grey;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 50px 15px 50px;
   margin: 30px 0 30px;
 }
 
 .btn--commander a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  opacity: 0.85;
 }
 
 footer {
@@ -149,7 +158,11 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
-  padding: 0 0 10px 30px;
+  padding: 0 0 10px 20px;
+}
+
+footer a:hover {
+  font-weight: bold;
 }
 
 footer .fa-handshake {
@@ -166,6 +179,6 @@ footer .fa-utensils {
 
 footer svg {
   width: 110px;
-  padding: 30px;
+  padding: 20px;
 }
 /*# sourceMappingURL=menu1.css.map */
