@@ -184,7 +184,6 @@ nav {
         background: white;
         border-radius: 20px;
         box-shadow: 0 0 2px grey;
-        position: relative;
         margin-bottom: 20px;
 
         img { 
@@ -208,25 +207,38 @@ nav {
             border-radius: 5px;
         }
 
-        .fa-heart {
-            position: absolute;
-            right:25px ;
-            bottom: 30px;
+        .bas { 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .heart {
+           margin-right: 15px;
             font-size: 1.5em;
-        
-                &:hover {
-                    display: none;
-                }
-            
+            position: relative;
         }
 
-        .heart-full { display: none;
-            
+        #full-heart {
+            position: absolute;
+            right: 15px;
+            transition: opacity 200ms ease-in-out;
+            opacity: 0;
+            font-style: $color-prim;
+
             &:hover { 
                 opacity: 1;
-                color: blue;
-                }
-            
+            }
+        }
+
+        #empty-heart { 
+
+            position: absolute;
+            right: 15px;
+            transition: opacity 200ms ease-in-out;
+
+            &:hover { 
+                opacity: 0;
+            }
         }
 
 
