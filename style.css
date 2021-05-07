@@ -138,6 +138,7 @@ nav li a .fa-mobile-alt, nav li a .fa-store, nav li a .fa-list {
   text-decoration: none;
   color: black;
   display: block;
+  position: relative;
 }
 .main__container-restaurant {
   width: 90%;
@@ -173,21 +174,28 @@ nav li a .fa-mobile-alt, nav li a .fa-store, nav li a .fa-list {
   margin-right: 15px;
   font-size: 1.5em;
   position: relative;
+  cursor: pointer;
 }
 .main__container-restaurant #full-heart {
   position: absolute;
-  right: 15px;
-  transition: opacity 200ms ease-in-out;
+  font-size: 1.1em;
+  right: 14px;
+  top: -21px;
+  transition: all 100ms ease-in-out;
   opacity: 0;
-  font-style: #9356DC;
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
 }
 .main__container-restaurant #full-heart:hover {
   opacity: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .main__container-restaurant #empty-heart {
   position: absolute;
   right: 15px;
-  transition: opacity 200ms ease-in-out;
+  top: -20px;
+  transition: opacity 100ms ease-in-out;
 }
 .main__container-restaurant #empty-heart:hover {
   opacity: 0;

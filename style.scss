@@ -177,6 +177,7 @@ nav {
         text-decoration: none;
         color: black;
         display: block;
+        position: relative;
     }
 
     &-restaurant { 
@@ -216,17 +217,25 @@ nav {
            margin-right: 15px;
             font-size: 1.5em;
             position: relative;
+            cursor: pointer;
         }
 
         #full-heart {
             position: absolute;
-            right: 15px;
-            transition: opacity 200ms ease-in-out;
+            font-size: 1.1em;
+            right: 14px;
+            top: -21px;
+            transition: all 100ms ease-in-out;
             opacity: 0;
-            font-style: $color-prim;
+            background: linear-gradient(to top right,$color-sec, $color-prim);
+            
+
 
             &:hover { 
                 opacity: 1;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
             }
         }
 
@@ -234,7 +243,9 @@ nav {
 
             position: absolute;
             right: 15px;
-            transition: opacity 200ms ease-in-out;
+            top: -20px;
+            transition: opacity 100ms ease-in-out;
+            
 
             &:hover { 
                 opacity: 0;
