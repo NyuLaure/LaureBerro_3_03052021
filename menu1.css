@@ -139,28 +139,58 @@ h2 {
   -webkit-box-shadow: 0 0 10px #c7c4c4;
           box-shadow: 0 0 10px #c7c4c4;
   overflow: hidden;
-  -webkit-animation: chargement  2s ease-in-out;
-          animation: chargement  2s ease-in-out;
+  -webkit-animation: chargement 0.5s;
+          animation: chargement 0.5s;
 }
 
 .plat--1 {
-  -webkit-animation-delay: 50ms;
-          animation-delay: 50ms;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .plat--2 {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .plat--3 {
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .plat--4 {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.plat--5 {
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+.plat--6 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.plat--7 {
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
+.plat--8 {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.plat--9 {
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+}
+
+.plat--10 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .plat:hover .anim {
