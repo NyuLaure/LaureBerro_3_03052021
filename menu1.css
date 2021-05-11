@@ -86,17 +86,104 @@ h2 {
   margin: 7px 0 15px 15px;
 }
 
+@-webkit-keyframes chargement {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes chargement {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .plat {
   position: relative;
   border-radius: 10px;
   background: white;
   width: 90%;
   margin: 0 0 10px 10px;
+  -webkit-box-shadow: 0 0 10px #c7c4c4;
+          box-shadow: 0 0 10px #c7c4c4;
+  overflow: hidden;
+  -webkit-animation: chargement  2s ease-in-out;
+          animation: chargement  2s ease-in-out;
 }
 
-.plat:hover > .anim {
+.plat--1 {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.plat--2 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.plat--3 {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.plat--4 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.plat:hover .anim {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.plat:hover .price {
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
+}
+
+.plat:hover .fa-check-circle {
+  -webkit-transform: translateX(-20px) rotate(0);
+          transform: translateX(-20px) rotate(0);
+}
+
+.plat:hover h3 {
+  width: 60%;
+}
+
+.plat:hover p {
+  width: 60%;
 }
 
 .plat .anim {
@@ -120,15 +207,38 @@ h2 {
           transform-origin: right 50%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
-.plat .anim .fa-check-circle {
+.plat .fa-check-circle {
+  position: absolute;
+  right: 0;
+  top: 20px;
   font-size: 1.5em;
   color: white;
+  -webkit-transform: translateX(20px) rotate(180deg);
+          transform: translateX(20px) rotate(180deg);
+  -webkit-transition: -webkit-transform 300ms ease-in-out 130ms;
+  transition: -webkit-transform 300ms ease-in-out 130ms;
+  transition: transform 300ms ease-in-out 130ms;
+  transition: transform 300ms ease-in-out 130ms, -webkit-transform 300ms ease-in-out 130ms;
+}
+
+.plat .price {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  font-weight: bold;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  overflow: visible;
 }
 
 .plat h3 {
@@ -136,6 +246,12 @@ h2 {
   padding: 15px 0 5px 10px;
   font-weight: normal;
   font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+  text-overflow: ellipsis;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
 }
 
 .plat p {
@@ -143,13 +259,12 @@ h2 {
   padding: 0 0 10px 10px;
   font-weight: lighter;
   font-size: 0.9em;
-}
-
-.plat .price {
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
-  font-weight: bold;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
 }
 
 .btn--commander {
