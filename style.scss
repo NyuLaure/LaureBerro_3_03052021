@@ -161,6 +161,7 @@ h1 {
         padding: 15px 17px 15px 17px;
     }
 }
+/* Début de la nav - Fonctionnement -  */
 
 .nav__btn { 
     position: relative;
@@ -247,6 +248,10 @@ nav {
     align-items: center;
     height: 100%;
     padding-bottom: 40px;
+
+    h2 {
+        padding: 30px 50% 0 0;
+    }
 
     a { 
         text-decoration: none;

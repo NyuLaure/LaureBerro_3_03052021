@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
@@ -213,6 +214,7 @@ h1 {
   padding: 15px 17px 15px 17px;
 }
 
+/* Début de la nav - Fonctionnement -  */
 .nav__btn {
   position: relative;
   color: black;
@@ -298,6 +300,10 @@ nav li a .fa-mobile-alt, nav li a .fa-list, nav li a .fa-store {
           align-items: center;
   height: 100%;
   padding-bottom: 40px;
+}
+
+.main__container h2 {
+  padding: 30px 50% 0 0;
 }
 
 .main__container a {
