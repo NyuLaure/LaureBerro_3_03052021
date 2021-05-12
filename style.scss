@@ -5,7 +5,7 @@ $color-background: #f6f6f6;
 $color-hover-nav: #f5edff;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
-
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 
 body { 
@@ -46,18 +46,20 @@ body {
     position: absolute;
     top: 0;
     z-index: 10;
-    animation: loading-background 3s ease-in-out;
+    animation: loading-background 2s ease-in-out;
     opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200px;
-    
-    
+    text-align: center;
+ 
 }
+
 .logo-spinner {
-    
-    width: 60%;
+    font-family: "Shrikhand", sans-serif;
+    color: white;
+    font-size: 3em;
+    width: 80%;
     margin: 200px 0 100px 0;
 }
 
@@ -69,7 +71,8 @@ body {
     border: 5px solid;
     border-radius: 50%;
     border-top-color: transparent;
-    animation: turn 1s linear infinite; }
+    animation: turn 1s linear infinite; 
+}
   
   @keyframes turn {
     0% {
@@ -172,9 +175,7 @@ nav {
     ol { 
         list-style-type: none;
         padding-left: 30px;
-        margin-bottom: 80px;
-
-        
+        margin-bottom: 80px;   
     } 
    
 
@@ -222,13 +223,13 @@ nav {
 
             .fa-mobile-alt { 
                 padding: 0 20px 0 30px;
-                color: #7e7e7e;
-
-                
+                color: #7e7e7e;   
             }
+
             .fa-list {
                 @extend .fa-mobile-alt;
             }
+
             .fa-store {
                 @extend .fa-mobile-alt
             }
@@ -243,8 +244,6 @@ nav {
     align-items: center;
     height: 100%;
     padding-bottom: 40px;
-
-
 
     a { 
         text-decoration: none;
@@ -264,8 +263,7 @@ nav {
             width: 100%;
             height: 180px;
             object-fit: cover;
-            border-radius: 20px 20px 0 0;
-            
+            border-radius: 20px 20px 0 0; 
         }
 
         .btn-nouveau {
@@ -286,46 +284,44 @@ nav {
             align-items: center;
             justify-content: space-between;
         }
+
         .heart {
            margin-right: 15px;
             font-size: 1.5em;
             position: relative;
             cursor: pointer;
+
+            &:hover {
+                .full-heart { 
+                    opacity: 1;
+                }
+                .empty-heart {
+                    opacity: 0;
+                }
+            }
         }
 
         .full-heart {
             position: absolute;
-            font-size: 1.1em;
-            right: 14px;
-            top: -21px;
+            right: 15px;
+            top: -20px;
             transition: all 100ms ease-in-out;
             opacity: 0;
             background: linear-gradient(to top right,$color-sec, $color-prim);
-            
-
-
-            &:hover { 
-                opacity: 1;
-                -webkit-background-clip: text;
-                color: transparent;
-            }
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         .empty-heart { 
-
             position: absolute;
             right: 15px;
             top: -20px;
             transition: opacity 100ms ease-in-out;
             
-
             &:hover { 
                 opacity: 0;
             }
         }
-
-
-
 
         h3 {
             margin: 15px 0 0 15px;
@@ -334,7 +330,6 @@ nav {
              margin: 5px 0 15px 15px;
          }
     }
-
 }
 
 
@@ -344,7 +339,13 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     padding-bottom: 20px;
-    
+
+    p {
+        font-family:"Shrikhand", sans-serif ;
+        color: white;
+        padding: 10px 0 0px 25px;
+        font-size: 1.2em;
+    }
     a { 
         color: white;
         text-decoration: none;
@@ -364,10 +365,5 @@ footer {
     .fa-utensils { 
         padding-right: 10px;
         font-size: 0.8em;
-    }
-    
-    svg {
-        width: 110px;
-        padding: 25px;
-}
+    }  
 }

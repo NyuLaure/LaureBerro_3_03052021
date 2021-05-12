@@ -71,11 +71,43 @@ main {
      }
 }
 
-.fa-heart { 
-    font-size: 0.8em;
-    margin-left: 30px;
-    font-weight: lighter;
-}
+
+
+.heart {
+    margin-right: 15px;
+     font-size: 1.5em;
+     position: relative;
+     cursor: pointer;
+
+     &:hover {
+         .full-heart { 
+             opacity: 1;
+         }
+         .empty-heart {
+             opacity: 0;
+         }
+     }
+ }
+
+ .full-heart {
+     position: absolute;
+     right: 15px;
+     top: -52px;
+     transition: all 100ms ease-in-out;
+     opacity: 0;
+     background: linear-gradient(to top right,$color-sec, $color-prim);
+     -webkit-background-clip: text;
+     color: transparent;
+
+ }
+
+ .empty-heart { 
+     position: absolute;
+     right: 15px;
+     top: -52px;
+     transition: opacity 100ms ease-in-out;
+     
+ }
 
 
 
@@ -245,6 +277,13 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     padding-bottom: 20px;
+
+    p {
+        font-family:"Shrikhand", sans-serif ;
+        color: white;
+        padding: 10px 0 0px 25px;
+        font-size: 1.2em;
+}
     
     a { 
         color: white;
@@ -267,8 +306,5 @@ footer {
         font-size: 0.8em;
     }
     
-    svg {
-        width: 110px;
-        padding: 20px;
-}
+   
 }

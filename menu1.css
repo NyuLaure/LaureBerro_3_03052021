@@ -68,10 +68,40 @@ main {
   font-weight: lighter;
 }
 
-.fa-heart {
-  font-size: 0.8em;
-  margin-left: 30px;
-  font-weight: lighter;
+.heart {
+  margin-right: 15px;
+  font-size: 1.5em;
+  position: relative;
+  cursor: pointer;
+}
+
+.heart:hover .full-heart {
+  opacity: 1;
+}
+
+.heart:hover .empty-heart {
+  opacity: 0;
+}
+
+.full-heart {
+  position: absolute;
+  right: 15px;
+  top: -52px;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  opacity: 0;
+  background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.empty-heart {
+  position: absolute;
+  right: 15px;
+  top: -52px;
+  -webkit-transition: opacity 100ms ease-in-out;
+  transition: opacity 100ms ease-in-out;
 }
 
 h2 {
@@ -337,6 +367,13 @@ footer {
   padding-bottom: 20px;
 }
 
+footer p {
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  padding: 10px 0 0px 25px;
+  font-size: 1.2em;
+}
+
 footer a {
   color: white;
   text-decoration: none;
@@ -357,10 +394,5 @@ footer .fa-handshake {
 footer .fa-utensils {
   padding-right: 10px;
   font-size: 0.8em;
-}
-
-footer svg {
-  width: 110px;
-  padding: 20px;
 }
 /*# sourceMappingURL=menu1.css.map */
