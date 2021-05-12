@@ -10,7 +10,74 @@ $color-hover-nav: #f5edff;
 
 body { 
     font-family: "Roboto", sans-serif; 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     
+}
+@keyframes  loading-background{
+    0% {
+        width: 100%;
+        height: 100%;
+       opacity : 1; 
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    99% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+
+.loading-spinner {
+   
+    background: linear-gradient(to top, $color-prim, $color-sec);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    animation: loading-background 3s ease-in-out;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    
+    
+}
+.logo-spinner {
+    
+    width: 60%;
+    margin: 200px 0 100px 0;
+}
+
+.spinner {
+    height: 50px;
+    width: 50px;
+    color: #99E2D0;
+    display: inline-block;
+    border: 5px solid;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: turn 1s linear infinite; }
+  
+  @keyframes turn {
+    0% {
+      transform: rotate(0); 
+    }
+    100% {
+      transform: rotate(360deg); 
+    } 
 }
 
 .header-logo {
@@ -18,7 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0 20px 0 ;
+    padding: 20px 0 20px 0 ;
 
     & img {
         width: 45%;
@@ -69,9 +136,15 @@ body {
 .header__btn {
       
         margin-top: 10px;
+        
         &:hover {
-            transform: scale(1.1);
+            opacity: 0.85;
+            
         }
+        &:hover a {
+            box-shadow: 2px 2px 5px rgb(75, 74, 74);
+        }
+
     a { 
         color: white;
         text-decoration: none;
