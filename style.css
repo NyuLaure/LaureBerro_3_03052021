@@ -8,6 +8,7 @@ body {
   margin: 0;
 }
 
+/* Loading spinner */
 @-webkit-keyframes loading-background {
   0% {
     width: 100%;
@@ -30,7 +31,6 @@ body {
     height: 0px;
   }
 }
-
 @keyframes loading-background {
   0% {
     width: 100%;
@@ -118,23 +118,17 @@ body {
   }
 }
 
-.header-logo {
+/* Header */
+h1 {
+  font-family: "Shrikhand", sans-serif;
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0 20px 0;
-}
-
-.header-logo img {
+  text-align: center;
+  justify-items: center;
+  padding: 10px 25% 10px 25%;
   width: 45%;
   height: 50%;
+  margin: 0;
+  font-size: 1.8em;
 }
 
 .header__localisation {
@@ -184,7 +178,7 @@ body {
 .header__explorer h3 {
   font-size: 1.5em;
   text-align: center;
-  margin: 30px 0 20px 0;
+  margin: 30px 10px 20px 10px;
 }
 
 .header__explorer p {
