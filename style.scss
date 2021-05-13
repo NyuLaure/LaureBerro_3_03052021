@@ -375,3 +375,92 @@ footer {
         font-size: 0.8em;
     }  
 }
+
+
+@media screen and (min-width: 768px) {
+    header { 
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 { 
+            font-size: 4em;
+        }
+        .header__localisation { 
+            display: flex;
+            justify-content: left;
+            padding-left: 30px;
+            width: 50%;
+            border-radius: 20px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .header__explorer {
+            width: 100%;
+           height: 100%;
+           padding-bottom: 40px;
+
+            h3 { 
+                font-size: 2em;
+            }
+
+            p { 
+                margin-bottom: 40px;
+            }
+        }
+    }
+   
+   
+    ol { 
+       display: flex;
+       flex-direction: row;
+    }
+
+    li { 
+        margin-right: 35px;
+    }
+
+    .main__container { 
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: 120px;
+
+        &-restaurant {
+            width: 23%;
+            margin-bottom: 40px;
+
+        }
+
+
+        h2 { 
+            font-size: 2em;
+            position: absolute;
+            top: 0px;
+            left: 70px;
+        }
+
+       
+        
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    nav { 
+        width: 50%;
+    }
+    ol {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__container-restaurant { 
+        width: 40%;
+    }
+
+}
