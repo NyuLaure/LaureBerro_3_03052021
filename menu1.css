@@ -383,4 +383,35 @@ footer .fa-utensils {
   padding-right: 10px;
   font-size: 0.8em;
 }
+
+@media screen and (min-width: 991px) {
+  .header-logo h4 {
+    font-size: 3.5em;
+  }
+  .header-logo a {
+    top: 45px;
+  }
+  .menu__container h1 {
+    font-size: 2.3em;
+    margin: 0;
+  }
+  .menu__container .heart {
+    font-size: 2em;
+    margin-right: 30px;
+  }
+  .menu__container--all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__container--section {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header-logo h4 {
+    font-size: 3em;
+  }
+}
 /*# sourceMappingURL=menu1.css.map */
