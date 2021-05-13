@@ -1,9 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Logo et flèche retour */
 .header-logo h4 {
   font-family: "Shrikhand", sans-serif;
   background: white;
@@ -28,6 +30,7 @@ body {
   font-size: 1.5em;
 }
 
+/* Photo du restaurant */
 img {
   width: 100%;
   -o-object-fit: cover;
@@ -36,6 +39,7 @@ img {
   z-index: 1;
 }
 
+/* Debut du menu - Titre et coeur */
 .menu__container {
   position: relative;
   top: -42px;
@@ -90,18 +94,21 @@ img {
   transition: opacity 100ms ease-in-out;
 }
 
+/* h2 = "Entrées" , "Plats" et "Dessert" */
 h2 {
   font-size: 1em;
   margin: 30px 0 0 15px;
   font-weight: lighter;
 }
 
+/* Ligne verte */
 .underlign {
   border-bottom: #99E2D0 solid 3px;
   width: 40px;
   margin: 7px 0 15px 15px;
 }
 
+/* Chargement en cascade des plats ( opacité et deplacement vertical )  */
 @-webkit-keyframes chargement {
   0% {
     -webkit-transform: translateY(10px);
@@ -123,7 +130,6 @@ h2 {
     opacity: 1;
   }
 }
-
 @keyframes chargement {
   0% {
     -webkit-transform: translateY(10px);
@@ -157,6 +163,10 @@ h2 {
   overflow: hidden;
   -webkit-animation: chargement 0.25s;
           animation: chargement 0.25s;
+  /* Animation du "check" sur chaque plat */
+  /* Carre vert */
+  /* Check dans le carre vert de l'animation */
+  /* Animation des autres éléments pour effet check */
 }
 
 .plat--1 {
@@ -313,6 +323,7 @@ h2 {
   transition: width 500ms;
 }
 
+/* Bouton Commander */
 .btn--commander {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,6 +352,7 @@ h2 {
           box-shadow: 2px 2px 5px #4b4a4a;
 }
 
+/* Footer */
 footer {
   background: #353535;
   display: -webkit-box;
@@ -385,12 +397,15 @@ footer .fa-utensils {
 }
 
 @media screen and (min-width: 991px) {
+  /* Version mobile */
+  /* Logo */
   .header-logo h4 {
     font-size: 3.5em;
   }
   .header-logo a {
     top: 45px;
   }
+  /* Menu */
   .menu__container h1 {
     font-size: 2.3em;
     margin: 0;
@@ -410,6 +425,7 @@ footer .fa-utensils {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Version tablette */
   .header-logo h4 {
     font-size: 3em;
   }
