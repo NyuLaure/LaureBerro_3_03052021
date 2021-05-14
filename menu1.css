@@ -435,6 +435,10 @@ footer .fa-utensils {
   .menu__container .heart {
     font-size: 2.5em;
     top: -30px;
+    right: 35px;
+  }
+  .plat {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=menu1.css.map */
